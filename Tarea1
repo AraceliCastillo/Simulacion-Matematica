@@ -1,0 +1,14 @@
+print("Trata de adivinar el número que está pensando la computadora, solo tienes 3 intentos.")
+print("Solo usa números del 1 al 9")
+import random as ran
+num=ran.randint(0,2)
+inten=1
+for i in range (1,4):
+    x=input("Intentalo: ")
+    y=int(x)
+    if num==y:
+        print("Felicidades, ¡Adivinaste!")
+        break
+    inten+=1
+    if inten==4:
+        print("Has perdido, El número era: ", num)
